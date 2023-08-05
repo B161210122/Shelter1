@@ -1,0 +1,30 @@
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\bin\Debug\net7.0\Shelter.Common.deps.json
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\bin\Debug\net7.0\Shelter.Common.dll
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\bin\Debug\net7.0\Shelter.Common.pdb
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\bin\Debug\net7.0\Shelter.Domain.dll
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\bin\Debug\net7.0\Shelter.Domain.pdb
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\Shelter.Common.csproj.AssemblyReference.cache
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\Shelter.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\Shelter.Common.AssemblyInfoInputs.cache
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\Shelter.Common.AssemblyInfo.cs
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\Shelter.Common.csproj.CoreCompileInputs.cache
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\Shelter.Common.csproj.CopyComplete
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\Shelter.Common.dll
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\refint\Shelter.Common.dll
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\Shelter.Common.pdb
+C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Common\obj\Debug\net7.0\ref\Shelter.Common.dll
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\bin\Debug\net7.0\Shelter.Common.deps.json
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\bin\Debug\net7.0\Shelter.Common.dll
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\bin\Debug\net7.0\Shelter.Common.pdb
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\bin\Debug\net7.0\Shelter.Domain.dll
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\bin\Debug\net7.0\Shelter.Domain.pdb
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\Shelter.Common.csproj.AssemblyReference.cache
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\Shelter.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\Shelter.Common.AssemblyInfoInputs.cache
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\Shelter.Common.AssemblyInfo.cs
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\Shelter.Common.csproj.CoreCompileInputs.cache
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\Shelter.Common.csproj.CopyComplete
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\Shelter.Common.dll
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\refint\Shelter.Common.dll
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\Shelter.Common.pdb
+C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Common\obj\Debug\net7.0\ref\Shelter.Common.dll
