@@ -12,17 +12,3 @@ C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Domain\obj\Debug\net7.0\refint
 C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.pdb
 C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.genruntimeconfig.cache
 C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.Domain\obj\Debug\net7.0\ref\Shelter.Domain.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\bin\Debug\net7.0\Shelter.Domain.deps.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\bin\Debug\net7.0\Shelter.Domain.runtimeconfig.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\bin\Debug\net7.0\Shelter.Domain.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\bin\Debug\net7.0\Shelter.Domain.pdb
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.csproj.AssemblyReference.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.AssemblyInfoInputs.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.AssemblyInfo.cs
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.csproj.CoreCompileInputs.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\refint\Shelter.Domain.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.pdb
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\Shelter.Domain.genruntimeconfig.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.Domain\obj\Debug\net7.0\ref\Shelter.Domain.dll

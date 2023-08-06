@@ -3262,19 +3262,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mustafa Eroğlu\\.nuget\\packages\\": {}
+    "C:\\Users\\talha.yilmaz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mustafa Eroğlu\\Desktop\\Shelter1\\Shelter.Common\\Shelter.Common.csproj",
+      "projectUniqueName": "C:\\Users\\talha.yilmaz\\source\\repos\\Shelte\\Shelter.Common\\Shelter.Common.csproj",
       "projectName": "Shelter.Common",
-      "projectPath": "C:\\Users\\Mustafa Eroğlu\\Desktop\\Shelter1\\Shelter.Common\\Shelter.Common.csproj",
-      "packagesPath": "C:\\Users\\Mustafa Eroğlu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mustafa Eroğlu\\Desktop\\Shelter1\\Shelter.Common\\obj\\",
+      "projectPath": "C:\\Users\\talha.yilmaz\\source\\repos\\Shelte\\Shelter.Common\\Shelter.Common.csproj",
+      "packagesPath": "C:\\Users\\talha.yilmaz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\talha.yilmaz\\source\\repos\\Shelte\\Shelter.Common\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Mustafa Eroğlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\talha.yilmaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3282,14 +3287,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Mustafa Eroğlu\\Desktop\\Shelter1\\Shelter.Domain\\Shelter.Domain.csproj": {
-              "projectPath": "C:\\Users\\Mustafa Eroğlu\\Desktop\\Shelter1\\Shelter.Domain\\Shelter.Domain.csproj"
+            "C:\\Users\\talha.yilmaz\\source\\repos\\Shelte\\Shelter.Domain\\Shelter.Domain.csproj": {
+              "projectPath": "C:\\Users\\talha.yilmaz\\source\\repos\\Shelte\\Shelter.Domain\\Shelter.Domain.csproj"
             }
           }
         }
@@ -3337,7 +3343,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

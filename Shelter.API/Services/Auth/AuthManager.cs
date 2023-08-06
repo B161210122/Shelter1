@@ -11,17 +11,20 @@ namespace Shelter.API.Services.Auth
         private readonly IRefreshTokenRepository _refreshTokenRepository;
         private readonly ITokenHelper _tokenHelper;
         private readonly TokenOptions _tokenOptions;
-        
+        private readonly IOperationClaimRepository _operationClaimRepository;
+
 
         public AuthManager(IUserOperationClaimRepository userOperationClaimRepository,
                            IRefreshTokenRepository refreshTokenRepository,
                            ITokenHelper tokenHelper,
-                           IConfiguration configuration)
+                           IConfiguration configuration,
+                           IOperationClaimRepository operationClaimRepository)
         {
             _userOperationClaimRepository = userOperationClaimRepository;
             _refreshTokenRepository = refreshTokenRepository;
             _tokenHelper = tokenHelper;
             _tokenOptions = configuration.GetSection("TokenOptions").Get<TokenOptions>();
+            _operationClaimRepository = operationClaimRepository;
         }
 
         public RefreshToken AddRefreshToken(RefreshToken refreshToken)
@@ -34,13 +37,8 @@ namespace Shelter.API.Services.Auth
         
         public  AccessToken CreateAccessToken(User user)
         {
-            IList<OperationClaim> operationClaims = _userOperationClaimRepository.GetAll(p => p.UserId == user.Id)
-                .Select(p =>
-                    new OperationClaim
-                    {
-                        Id = p.OperationClaimId,
-                        Name = p.OperationClaim.Name
-                    }).ToList();
+            IList<UserOperationClaim> userOperationClaims = _userOperationClaimRepository.GetAll(p => p.UserId == user.Id);
+            IList<OperationClaim> operationClaims = _operationClaimRepository.GetAll(x => userOperationClaims.Select(x => x.OperationClaimId).Contains(x.Id));
 
             AccessToken accessToken = _tokenHelper.CreateToken(user, operationClaims);
 

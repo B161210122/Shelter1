@@ -32,37 +32,3 @@ C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.MVC\obj\Debug\net7.0\refint\Sh
 C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.pdb
 C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.genruntimeconfig.cache
 C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.MVC\obj\Debug\net7.0\ref\Shelter.MVC.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\appsettings.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\Shelter.MVC.staticwebassets.runtime.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\Shelter.MVC.exe
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\Shelter.MVC.deps.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\Shelter.MVC.runtimeconfig.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\Shelter.MVC.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\Shelter.MVC.pdb
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.csproj.AssemblyReference.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.AssemblyInfoInputs.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.AssemblyInfo.cs
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.csproj.CoreCompileInputs.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.RazorAssemblyInfo.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.RazorAssemblyInfo.cs
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\staticwebassets\msbuild.Shelter.MVC.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\staticwebassets\msbuild.build.Shelter.MVC.props
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Shelter.MVC.props
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Shelter.MVC.props
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\scopedcss\bundle\Shelter.MVC.styles.css
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\scopedcss\projectbundle\Shelter.MVC.bundle.scp.css
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.csproj.CopyComplete
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\refint\Shelter.MVC.dll
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.pdb
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\Shelter.MVC.genruntimeconfig.cache
-C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\obj\Debug\net7.0\ref\Shelter.MVC.dll

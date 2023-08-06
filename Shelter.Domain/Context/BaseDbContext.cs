@@ -16,6 +16,9 @@ namespace Shelter.Domain.Context
         public DbSet<User> Users { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<Adoption> Adoptions { get; set; }
+        public DbSet<Animal> Animals { get; set; }
+        public DbSet<Genus> Genus { get; set; }
 
         public BaseDbContext(IConfiguration configuration, DbContextOptions dbContextOptions) : base(dbContextOptions)
         {

@@ -22,6 +22,102 @@ namespace Shelter.Domain.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Shelter.Domain.Entities.Adoption", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AnimalId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Adoptions");
+                });
+
+            modelBuilder.Entity("Shelter.Domain.Entities.Animal", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AcceptionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GenusId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GenusId");
+
+                    b.ToTable("Animals");
+                });
+
+            modelBuilder.Entity("Shelter.Domain.Entities.Genus", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genus");
+                });
+
             modelBuilder.Entity("Shelter.Domain.Entities.OperationClaim", b =>
                 {
                     b.Property<int>("Id")
@@ -156,14 +252,14 @@ namespace Shelter.Domain.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 8, 6, 1, 27, 38, 891, DateTimeKind.Local).AddTicks(3395),
+                            CreatedDate = new DateTime(2023, 8, 5, 22, 50, 49, 77, DateTimeKind.Local).AddTicks(1301),
                             Email = "b161210122@sakarya.edu.tr",
                             FirstName = "Admin",
                             LastName = "Admin",
-                            PasswordHash = new byte[] { 24, 209, 243, 187, 105, 73, 49, 69, 34, 43, 176, 202, 28, 204, 203, 96, 116, 254, 232, 239, 31, 213, 7, 18, 5, 86, 200, 58, 252, 239, 85, 20, 94, 167, 109, 128, 86, 27, 139, 224, 109, 168, 104, 31, 41, 174, 249, 20, 117, 249, 185, 158, 185, 16, 122, 19, 89, 137, 145, 187, 61, 233, 159, 155 },
-                            PasswordSalt = new byte[] { 56, 250, 96, 127, 23, 140, 146, 227, 120, 145, 207, 174, 137, 91, 79, 6, 191, 113, 229, 47, 32, 172, 115, 166, 129, 15, 4, 213, 196, 125, 190, 73, 45, 239, 147, 240, 166, 73, 25, 12, 124, 226, 48, 194, 24, 203, 47, 82, 42, 206, 60, 177, 214, 215, 98, 119, 236, 27, 100, 132, 216, 49, 26, 88, 189, 250, 18, 105, 198, 249, 68, 16, 177, 35, 70, 78, 62, 26, 232, 153, 143, 251, 79, 138, 18, 153, 247, 209, 9, 253, 0, 70, 247, 227, 93, 49, 189, 187, 105, 222, 136, 185, 82, 32, 90, 33, 228, 86, 16, 75, 121, 25, 201, 241, 135, 163, 185, 190, 246, 45, 149, 227, 233, 161, 15, 106, 207, 54 },
+                            PasswordHash = new byte[] { 76, 41, 75, 52, 207, 132, 160, 253, 16, 29, 176, 98, 48, 71, 207, 63, 222, 245, 71, 173, 58, 152, 109, 139, 139, 55, 229, 201, 11, 137, 80, 146, 27, 155, 21, 193, 180, 75, 37, 183, 30, 230, 98, 177, 190, 114, 125, 247, 237, 57, 171, 115, 49, 100, 226, 70, 65, 71, 88, 11, 1, 179, 77, 151 },
+                            PasswordSalt = new byte[] { 20, 92, 177, 199, 54, 108, 99, 136, 137, 222, 205, 149, 82, 86, 126, 34, 68, 27, 222, 211, 94, 48, 255, 59, 38, 129, 68, 81, 101, 57, 90, 64, 40, 93, 202, 58, 125, 194, 106, 110, 58, 102, 180, 218, 49, 133, 235, 88, 35, 254, 61, 229, 86, 98, 178, 137, 239, 72, 120, 206, 127, 239, 54, 48, 168, 53, 103, 141, 5, 110, 119, 223, 142, 36, 70, 60, 162, 13, 60, 223, 26, 111, 91, 194, 228, 167, 215, 248, 114, 131, 203, 180, 199, 22, 12, 204, 27, 154, 161, 194, 186, 44, 90, 107, 32, 97, 202, 251, 151, 133, 65, 109, 191, 47, 173, 2, 60, 7, 63, 219, 205, 241, 206, 107, 86, 2, 97, 198 },
                             Status = true,
-                            UpdatedDate = new DateTime(2023, 8, 6, 1, 27, 38, 891, DateTimeKind.Local).AddTicks(3412)
+                            UpdatedDate = new DateTime(2023, 8, 5, 22, 50, 49, 77, DateTimeKind.Local).AddTicks(1313)
                         });
                 });
 
@@ -206,6 +302,36 @@ namespace Shelter.Domain.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Shelter.Domain.Entities.Adoption", b =>
+                {
+                    b.HasOne("Shelter.Domain.Entities.Animal", "Animal")
+                        .WithMany("Adoptions")
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Shelter.Domain.Entities.User", "User")
+                        .WithMany("Adoptions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Animal");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Shelter.Domain.Entities.Animal", b =>
+                {
+                    b.HasOne("Shelter.Domain.Entities.Genus", "Genus")
+                        .WithMany("Animals")
+                        .HasForeignKey("GenusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Genus");
+                });
+
             modelBuilder.Entity("Shelter.Domain.Entities.RefreshToken", b =>
                 {
                     b.HasOne("Shelter.Domain.Entities.User", "User")
@@ -236,8 +362,20 @@ namespace Shelter.Domain.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Shelter.Domain.Entities.Animal", b =>
+                {
+                    b.Navigation("Adoptions");
+                });
+
+            modelBuilder.Entity("Shelter.Domain.Entities.Genus", b =>
+                {
+                    b.Navigation("Animals");
+                });
+
             modelBuilder.Entity("Shelter.Domain.Entities.User", b =>
                 {
+                    b.Navigation("Adoptions");
+
                     b.Navigation("RefreshTokens");
 
                     b.Navigation("UserOperationClaims");
