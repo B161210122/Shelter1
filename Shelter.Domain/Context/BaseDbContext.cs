@@ -5,12 +5,21 @@ using Shelter.Domain.Entities;
 using Shelter.Domain.Constants;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace Shelter.Domain.Context
 {
     public class BaseDbContext : DbContext
     {
-        protected IConfiguration Configuration { get; set; }
+        public BaseDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+        {
+
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=localhost,11453;Initial Catalog=ShelterDB;Persist Security Info=True;User ID=sa;Password=Pswrd12345.;MultipleActiveResultSets=True;TrustServerCertificate=True;");
+        }
 
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<User> Users { get; set; }
@@ -20,10 +29,7 @@ namespace Shelter.Domain.Context
         public DbSet<Animal> Animals { get; set; }
         public DbSet<Genus> Genus { get; set; }
 
-        public BaseDbContext(IConfiguration configuration, DbContextOptions dbContextOptions) : base(dbContextOptions)
-        {
-            Configuration = configuration;
-        }
+        
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
@@ -43,9 +49,7 @@ namespace Shelter.Domain.Context
             return await base.SaveChangesAsync(cancellationToken);
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-        }
+     
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -83,6 +87,16 @@ namespace Shelter.Domain.Context
 
             UserOperationClaim[] userOperationClaimSeedData = new UserOperationClaim[] { new(1, 1, 1) };
             modelBuilder.Entity<UserOperationClaim>().HasData(userOperationClaimSeedData);
+        }
+    }
+    public class YourDbContextFactory : IDesignTimeDbContextFactory<BaseDbContext>
+    {
+        public BaseDbContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<BaseDbContext>();
+            optionsBuilder.UseSqlServer("Server=localhost,11453;Initial Catalog=ShelterDB;Persist Security Info=True;User ID=sa;Password=Pswrd12345.;MultipleActiveResultSets=True;TrustServerCertificate=True;");
+
+            return new BaseDbContext(optionsBuilder.Options);
         }
     }
 }
