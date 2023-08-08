@@ -8,7 +8,7 @@ namespace Shelter.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class GenusController : ControllerBase
     {
         private readonly IGenusService _genusService;

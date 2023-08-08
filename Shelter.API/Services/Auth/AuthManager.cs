@@ -1,5 +1,4 @@
 ﻿using Shelter.API.Repositories.Abstract;
-using Shelter.API.Repositories.Concrete;
 using Shelter.Common.JWT;
 using Shelter.Domain.Entities;
 

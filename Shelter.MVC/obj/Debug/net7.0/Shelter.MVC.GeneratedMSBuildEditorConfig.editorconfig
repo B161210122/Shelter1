@@ -9,29 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Shelter.MVC
 build_property.RootNamespace = Shelter.MVC
-build_property.ProjectDir = C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.MVC\
+build_property.ProjectDir = C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\talha.yilmaz\source\repos\Shelte\Shelter.MVC
+build_property.MSBuildProjectDirectory = C:\Users\Mustafa Eroğlu\Desktop\Shelter1\Shelter.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/talha.yilmaz/source/repos/Shelte/Shelter.MVC/Views/Shared/Error.cshtml]
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Adoption/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvcHRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Genus/AddOrUpdateGenus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VudXNcQWRkT3JVcGRhdGVHZW51cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Genus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VudXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Home/AddOrUpdateAnimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRPclVwZGF0ZUFuaW1hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/talha.yilmaz/source/repos/Shelte/Shelter.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/talha.yilmaz/source/repos/Shelte/Shelter.MVC/Views/_ViewImports.cshtml]
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/talha.yilmaz/source/repos/Shelte/Shelter.MVC/Views/_ViewStart.cshtml]
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/talha.yilmaz/source/repos/Shelte/Shelter.MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Mustafa Eroğlu/Desktop/Shelter1/Shelter.MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-99xxaxskvl

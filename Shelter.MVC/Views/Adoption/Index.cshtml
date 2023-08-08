@@ -1,0 +1,50 @@
+﻿@using Shelter.Common.Dtos;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    var animals = (List<AnimalDto>)ViewBag.Animals ?? new List<AnimalDto>();
+}
+
+<div class="container ml-5">
+    <div class="card">
+        <div class="card-title pr">
+            <h4>Hayvanlar</h4>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table student-data-table m-t-20">
+                    <thead>
+                        <tr>
+                            <th>İsmi</th>
+                            <th>Cinsi</th>
+                            <th>Yaşı</th>
+                            <th>Cinsiyeti</th>
+                            <th>Açıklama</th>
+                            <th>Kabul Tarihi</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in animals)
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>@item.Genus</td>
+                                <td>@item.Age</td>
+                                <td>@item.Gender</td>
+                                <td>@item.Description</td>
+                                <td>@item.AcceptionDate.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    <span class="jsgrid-button jsgrid-delete-button ti-trash" type="button" title="Delete" onclick="location.href='adoption/DeleteAdoption?adoptionId=' + @item.Id"></span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

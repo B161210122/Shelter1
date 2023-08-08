@@ -15,17 +15,20 @@ namespace Shelter.API.Controllers
     {
         private readonly IUserRepository _userRepository;
         private readonly IAuthService _authService;
+        private readonly IUserOperationClaimRepository _userOperationClaimRepository;
 
-        public AuthController(IUserRepository userRepository, IAuthService authService)
+        public AuthController(IUserRepository userRepository, IAuthService authService, IUserOperationClaimRepository userOperationClaimRepository)
         {
             _userRepository = userRepository;
             _authService = authService;
+            _userOperationClaimRepository = userOperationClaimRepository;
         }
 
         [HttpPost("Login")]
         public IActionResult Login([FromBody] UserForLoginDto userForLoginDto)
         {
             User? user = _userRepository.Get(x => x.Email == userForLoginDto.Email);
+            user.UserOperationClaims = _userOperationClaimRepository.GetAll(x=>x.UserId == user.Id);
 
             if (user == null) return Ok(null);
 
@@ -39,6 +42,8 @@ namespace Shelter.API.Controllers
 
             loggedDto.AccessToken = createdAccessToken;
             loggedDto.RefreshToken = addedRefreshToken;
+            loggedDto.UserId = user.Id;
+            loggedDto.OperationClaimId = user.UserOperationClaims.Select(x=>x.OperationClaimId).FirstOrDefault();
 
             setRefreshTokenToCookie(loggedDto.RefreshToken);
 
@@ -61,6 +66,11 @@ namespace Shelter.API.Controllers
             };
 
             User createdUser = _userRepository.Add(newUser);
+            _userRepository.SaveChanges();
+
+            _userOperationClaimRepository.Add(new UserOperationClaim(0, createdUser.Id, 2));
+            _userOperationClaimRepository.SaveChanges();
+
             AccessToken createdAccessToken = _authService.CreateAccessToken(createdUser);
 
             RefreshToken createdRefreshToken = _authService.CreateRefreshToken(createdUser, getIpAddress());
@@ -73,7 +83,7 @@ namespace Shelter.API.Controllers
         }
 
         [HttpPost("RefreshToken")]
-        public async Task<IActionResult> RefreshToken()
+        public IActionResult RefreshToken()
         {
             RefreshToken? refreshToken = _authService.GetRefreshTokenByToken(getRefreshTokenFromCookies());
 
@@ -94,7 +104,7 @@ namespace Shelter.API.Controllers
 
             setRefreshTokenToCookie(refreshedTokensDto.RefreshToken);
 
-            return Created("", refreshedTokensDto);
+            return Created("", refreshedTokensDto.AccessToken);
         }
 
         [HttpPut("RevokeToken")]

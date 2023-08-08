@@ -1,0 +1,21 @@
+﻿@using Shelter.Common.Dtos;
+@model GenusDto
+@{
+    ViewData["Title"] = "AddOrUpdateGenus";
+}
+
+<div class="container ml-5">
+    <form asp-action="AddOrUpdateGenus" method="post">
+        <input type="hidden" value="@Model.Id" asp-for="Id" />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Tür</label>
+                    <input asp-for="Name" type="text" class="form-control" value="(@(Model.Id>0 ? string.Empty : @Model.Name))">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Kaydet</button>
+    </form>
+</div>
+

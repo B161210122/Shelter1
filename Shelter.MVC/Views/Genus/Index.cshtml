@@ -1,0 +1,46 @@
+﻿@using Shelter.Common.Dtos;
+
+@{
+    ViewData["Title"] = "Index";
+
+    var genusses = (List<GenusDto>)ViewBag.Genusses ?? new List<GenusDto>();
+    var operationClaimId = (int)ViewBag.OperationClaimId;
+}
+@if(operationClaimId > 0)
+{
+    <div class="container ml-5">
+        <div class="card">
+            <div class="card-title pr">
+                <h4>Türler</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table student-data-table m-t-20">
+                        <thead>
+                            <tr>
+                                <th>İsmi</th>
+                                <th><span class="jsgrid-button jsgrid-mode-button jsgrid-insert-mode-button ti-plus" type="button" title="" onclick="location.href='/home/addorupdateanimal'"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in genusses)
+                            {
+                                <tr>
+                                    <td>@item.Name</td>
+                                    <td>
+                                        <span class="jsgrid-button jsgrid-edit-button ti-pencil" type="button" title="Edit" onclick="location.href='/genus/addorupdategenus' + @item.Id"></span>
+                                        <span class="jsgrid-button jsgrid-delete-button ti-trash" type="button" title="Delete" onclick="location.href='/home/deletegenus' + @item.Id"></span>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <h3 class="ml-5">Bu sayfaya erişim yetkiniz yoktur!!!</h3>
+}

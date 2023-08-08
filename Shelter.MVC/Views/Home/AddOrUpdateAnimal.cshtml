@@ -1,0 +1,65 @@
+﻿@using Shelter.Common.Dtos;
+@using Shelter.Domain.Entities.Enums;
+@model AnimalDto
+
+@{
+    ViewData["Title"] = "AddOrUpdateAnimal";
+    var genusses = (List<GenusDto>)ViewBag.Genusses;
+}
+<div class="container ml-5">
+    <form asp-action="AddOrUpdateAnimal" method="post">
+        <input type="hidden" value="@Model.Id" asp-for="Id" />
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Türü</label>
+                    <select asp-for="GenusId" multiple class="form-control" id="exampleFormControlSelect2">
+                        @foreach (var item in genusses)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Adı</label>
+                    <input asp-for="Name" type="text" class="form-control" value="(@(Model.Id>0 ? string.Empty : @Model.Name))">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Yaşı</label>
+                        <input asp-for="Age" type="text" class="form-control" value="@(Model.Id>0  ? string.Empty : Model.Age.ToString())">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Cinsiyeti</label>
+                        <select asp-for="Gender" multiple class="form-control" id="exampleFormControlSelect2">
+                            <option value="@GenderEnum.Male">Erkek</option>
+                            <option value="@GenderEnum.Female">Kız</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Açıklama</label>
+                        <input asp-for="Description" type="text" class="form-control" value="@(Model.Id>0 ? string.Empty : Model.Description)">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Kabul Tarihi</label>
+                        <input asp-for="AcceptionDate" type="date" class="form-control" value="(@Model.Id>0 ? @DateTime.Now : @Model.AcceptionDate)">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Kaydet</button>
+        </div>
+    </form>
+</div>
+
